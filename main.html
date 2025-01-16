@@ -1,16 +1,15 @@
-<!DOCTYPE html>
+for (let i = 1; i <= 20; i++) {
+  let output = "";
 
-<html>
+  if (i % 3 === 0 && i % 5 === 0) {
+    output = "FizzBuzz";
+  } else if (i % 3 === 0) {
+    output = "Fizz";
+  } else if (i % 5 === 0) {
+    output = "Buzz";
+  } else {
+    output = i.toString();
+  }
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
-</html>
+  alert(output);
+}
